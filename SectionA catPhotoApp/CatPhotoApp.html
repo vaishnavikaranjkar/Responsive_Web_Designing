@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <main>
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+<!--FIRST LINES OF THE PAGE
+<!DOCTYPE html>
+<html lang="en">
+	INSIDE THE HEAD TAG
+		<meta charset="UTF-8">  TO ALLOW BROWSER TO ADD MULTIPLE LANG
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />  to allow page to look same on phones and on desktop
+
+
+1.	<main></main> to identify the main content of the page.
+2.	Target=_blank  attribute of anchor tag to open link in a new tab of the browser.
+3.	<figure></figure>  allows us to contain an image in a web page. 
+4.	<figcaption></figcaption>  written after img tag to give captions to images.
+5.	<em></em>  used with text in web page. Used to emphasis on the required word.
+6.	<strong></strong> to make font of text more bold.
+7.	<header></header>  to get main heading of the page grouped inside a tag 
+
+Forms
+
+FIELDSET, LEGEND
+LABEL, INPUT
+	ID, TYPE, NAME, VALUE
+1.	<form action="/submit-url"></form>  action attribute tells where to submit the form data
+2.	Input tag attributes
+a.	Type
+b.	Name  to specify the name of the data being submitted
+c.	Placeholder to specify what type of input should be given by the user
+d.	Required  no value needed. Just type with spaces on both sides of the word
+e.	<label><input type="radio"> cat</label> makes it so clicking the word cat also selects the corresponding radio button.
+f.	To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+g.	Id
+h.	Value
+i.	Checked attribute  to make an option default selected
+3.	Button tag attributes
+a.	Type=”submit”
+b.	Id
+4.	<fieldset></fieldset>  used to group related input tags
+5.	<legend></legend>  acts as a caption to the fieldset tag
+a.	 
+b.	Legend and fieldset output is given above
+6.	<input id="loving" type="checkbox"> <label for="loving">Loving</label>
+
+To associate loving with checkbox with for attribute
+-->
